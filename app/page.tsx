@@ -1,34 +1,45 @@
-<h1
-  style={{
-    fontSize: "70px",
-    color: "#ffffff",
-    marginBottom: "20px",
-  }}
->
-  ✨ EL UNIVERSO SO BRIGHT
-</h1>
+export default function Home() {
+  return (
+    <main
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        background: "#ffffff",
+        flexDirection: "column",
+        fontFamily: "Arial",
+        textAlign: "center",
+        padding: "20px",
+      }}
+    >
+      <img
+        src="https://i.imgur.com/1lYQxFf.png"
+        alt="SO BRIGHT"
+        style={{
+          width: "180px",
+          marginBottom: "30px",
+        }}
+      />
 
-<p
-  style={{
-    fontSize: "30px",
-    color: "#ffffff",
-    marginBottom: "20px",
-    fontWeight: "bold",
-  }}
->
-  Un ritual íntimo entre tú y él.
-</p>
+      <h1
+        style={{
+          color: "#875F89",
+          fontSize: "42px",
+          marginBottom: "12px",
+        }}
+      >
+        ✨ Cuidado premium para mascotas.
+      </h1>
 
-<p
-  style={{
-    fontSize: "24px",
-    color: "#ffffff",
-    maxWidth: "700px",
-    lineHeight: "1.6",
-    marginBottom: "40px",
-  }}
->
-  Más que un baño, una pausa.
-  <br />
-  Texturas cuidadas, aromas sutiles y un acabado que se percibe día tras día.
-</p>
+      <p
+        style={{
+          fontSize: "24px",
+          color: "#333",
+        }}
+      >
+        Brillo profesional en casa.
+      </p>
+    </main>
+  );
+}
