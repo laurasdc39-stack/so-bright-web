@@ -7,29 +7,49 @@ export default function Home() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#ffffff",
         flexDirection: "column",
+        background: "linear-gradient(to bottom, #875F89, #ffffff)",
         fontFamily: "Arial",
+        textAlign: "center",
+        padding: "20px",
       }}
     >
       <h1
         style={{
-          color: "#875F89",
-          fontSize: "60px",
+          fontSize: "70px",
+          color: "#ffffff",
           marginBottom: "20px",
         }}
       >
-        So Bright
+        So Bright Professional
       </h1>
 
       <p
         style={{
-          fontSize: "24px",
-          color: "#333",
+          fontSize: "28px",
+          color: "#ffffff",
+          maxWidth: "700px",
+          lineHeight: "1.5",
+          marginBottom: "40px",
         }}
       >
-        Blanqueamiento dental profesional
+        Línea profesional de shampoo, suavidad, brillo y desenredo premium para mascotas.
       </p>
+
+      <button
+        style={{
+          backgroundColor: "#ffffff",
+          color: "#875F89",
+          border: "none",
+          padding: "18px 35px",
+          borderRadius: "14px",
+          fontSize: "22px",
+          cursor: "pointer",
+          fontWeight: "bold",
+        }}
+      >
+        Comprar por WhatsApp
+      </button>
     </main>
   );
 }
