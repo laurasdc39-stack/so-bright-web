@@ -7,7 +7,7 @@ export default function Home() {
         justifyContent: "center",
         alignItems: "center",
         background:
-          "linear-gradient(180deg, #f7f4f8 0%, #ffffff 100%)",
+          "linear-gradient(135deg, #f5f2f7 0%, #d8c9df 45%, #7d617f 100%)",
         fontFamily: "Arial",
         padding: "40px",
       }}
@@ -22,6 +22,15 @@ export default function Home() {
           boxShadow: "0 10px 40px rgba(0,0,0,0.08)",
         }}
       >
+        <img
+          src="https://i.imgur.com/11YQxFf.png"
+          alt="SO BRIGHT"
+          style={{
+            width: "150px",
+            marginBottom: "25px",
+          }}
+        />
+
         <p
           style={{
             color: "#875F89",
@@ -49,26 +58,27 @@ export default function Home() {
 
         <p
           style={{
-            fontSize: "20px",
             color: "#555",
-            lineHeight: "1.7",
+            fontSize: "20px",
+            lineHeight: "1.8",
             marginBottom: "35px",
           }}
         >
-          Fórmulas profesionales diseñadas para aportar
-          brillo, suavidad y una apariencia impecable al pelaje.
+          Fórmulas profesionales diseñadas para aportar brillo,
+          suavidad y una apariencia impecable al pelaje.
         </p>
 
         <button
           style={{
             background: "#875F89",
-            color: "#fff",
+            color: "#ffffff",
             border: "none",
-            padding: "16px 34px",
+            padding: "16px 38px",
             borderRadius: "999px",
             fontSize: "18px",
-            cursor: "pointer",
             fontWeight: "bold",
+            cursor: "pointer",
+            boxShadow: "0 6px 20px rgba(135,95,137,0.35)",
           }}
         >
           Ver colección
