@@ -6,10 +6,8 @@ export default function Home() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-
         background:
-          "linear-gradient(135deg, #faf7fb 0%, #eadfeb 45%, #7A5C7D 100%)",
-
+          "linear-gradient(135deg, #faf7fb 0%, #f2ebf3 45%, #cdbfd1 100%)",
         fontFamily: "Arial",
         padding: "40px",
       }}
@@ -24,14 +22,17 @@ export default function Home() {
           boxShadow: "0 10px 40px rgba(0,0,0,0.08)",
         }}
       >
-        <img
-          src="https://i.imgur.com/7Vw6C8B.png"
-          alt="SO BRIGHT"
+        <p
           style={{
-            width: "170px",
-            marginBottom: "25px",
+            color: "#875F89",
+            letterSpacing: "4px",
+            fontSize: "13px",
+            marginBottom: "15px",
+            fontWeight: "bold",
           }}
-        />
+        >
+          SO BRIGHT PROFESSIONAL
+        </p>
 
         <p
           style={{
@@ -72,68 +73,19 @@ export default function Home() {
 
         <button
           style={{
-            background: "#875F89",
-            color: "#fff",
+            background: "#8E7394",
+            color: "#ffffff",
             border: "none",
             padding: "16px 38px",
             borderRadius: "999px",
             fontSize: "16px",
             fontWeight: "bold",
             cursor: "pointer",
-            boxShadow: "0 6px 18px rgba(135,95,137,0.35)",
+            boxShadow: "0 6px 18px rgba(142,115,148,0.28)",
           }}
         >
           Ver colección
         </button>
-
-        <div
-          style={{
-            marginTop: "45px",
-            display: "flex",
-            justifyContent: "center",
-            gap: "18px",
-            flexWrap: "wrap",
-          }}
-        >
-          <div>
-            <img
-              src="https://i.imgur.com/7Vw6C8B.png"
-              style={{
-                width: "70px",
-                borderRadius: "18px",
-              }}
-            />
-            <p style={{ marginTop: "10px", fontWeight: "bold" }}>
-              Silky Touch
-            </p>
-          </div>
-
-          <div>
-            <img
-              src="https://i.imgur.com/7Vw6C8B.png"
-              style={{
-                width: "70px",
-                borderRadius: "18px",
-              }}
-            />
-            <p style={{ marginTop: "10px", fontWeight: "bold" }}>
-              Deep Clean
-            </p>
-          </div>
-
-          <div>
-            <img
-              src="https://i.imgur.com/7Vw6C8B.png"
-              style={{
-                width: "70px",
-                borderRadius: "18px",
-              }}
-            />
-            <p style={{ marginTop: "10px", fontWeight: "bold" }}>
-              Smooth Coat
-            </p>
-          </div>
-        </div>
       </div>
     </main>
   );
