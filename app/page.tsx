@@ -6,7 +6,8 @@ export default function Home() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "#ffffff",
+        background:
+          "linear-gradient(135deg, #875F89 0%, #b89fba 45%, #ffffff 100%)",
         fontFamily: "Arial",
         padding: "40px",
       }}
@@ -19,7 +20,7 @@ export default function Home() {
           background: "#fcfafc",
           borderRadius: "30px",
           padding: "55px 35px",
-          boxShadow: "0 10px 40px rgba(0,0,0,0.06)",
+          boxShadow: "0 10px 40px rgba(0,0,0,0.08)",
           border: "1px solid #f1ebf3",
         }}
       >
@@ -82,7 +83,7 @@ export default function Home() {
             fontSize: "16px",
             fontWeight: "bold",
             cursor: "pointer",
-            boxShadow: "0 6px 16px rgba(135,95,137,0.18)",
+            boxShadow: "0 6px 16px rgba(135,95,137,0.20)",
           }}
         >
           Ver colección
