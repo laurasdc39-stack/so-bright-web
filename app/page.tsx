@@ -6,7 +6,8 @@ export default function Home() {
         width: "100%",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        alinear elementos:"flex-start",
+direccionFlex:"column",
         background: "#FAF8F5",
         fontFamily: "Arial",
         padding: "40px",
@@ -89,6 +90,88 @@ export default function Home() {
           Ver colección
         </button>
       </div>
+      <section
+  style={{
+    width: "100%",
+    marginTop: "90px",
+  }}
+>
+  <div
+    style={{
+      textAlign: "center",
+      marginBottom: "50px",
+    }}
+  >
+    <p
+      style={{
+        color: "#875F89",
+        letterSpacing: "3px",
+        fontSize: "12px",
+        fontWeight: "bold",
+        marginBottom: "10px",
+      }}
+    >
+      NUESTRA COLECCIÓN
+    </p>
+
+    <h2
+      style={{
+        fontSize: "48px",
+        color: "#1F1F1F",
+      }}
+    >
+      Fórmulas profesionales
+      <br />
+      para cada necesidad
+    </h2>
+  </div>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(240px,1fr))",
+      gap: "30px",
+      width: "100%",
+    }}
+  >
+    <div
+      style={{
+        background: "#FFFFFF",
+        borderRadius: "28px",
+        padding: "25px",
+        textAlign: "center",
+        boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
+      }}
+    >
+      <img
+        src="/silky.png"
+        style={{
+          width: "100%",
+          borderRadius: "18px",
+        }}
+      />
+
+      <h3
+        style={{
+          marginTop: "20px",
+          fontSize: "24px",
+        }}
+      >
+        Silky Touch
+      </h3>
+
+      <p
+        style={{
+          color: "#666",
+          lineHeight: "1.7",
+          marginTop: "10px",
+        }}
+      >
+        Shampoo premium para brillo intenso y suavidad extrema.
+      </p>
+    </div>
+  </div>
+</section>
     </main>
   );
 }
