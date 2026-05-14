@@ -7,7 +7,7 @@ export default function Home() {
         justifyContent: "center",
         alignItems: "center",
         background:
-          "linear-gradient(135deg, #f5f2f7 0%, #d8c9df 45%, #7d617f 100%)",
+          "linear-gradient(135deg, #faf7fb 0%, #efe7f2 40%, #cbb8d3 100%)",
         fontFamily: "Arial",
         padding: "40px",
       }}
@@ -22,15 +22,6 @@ export default function Home() {
           boxShadow: "0 10px 40px rgba(0,0,0,0.08)",
         }}
       >
-        <img
-          src="https://i.imgur.com/11YQxFf.png"
-          alt="SO BRIGHT"
-          style={{
-            width: "150px",
-            marginBottom: "25px",
-          }}
-        />
-
         <p
           style={{
             color: "#875F89",
@@ -78,7 +69,7 @@ export default function Home() {
             fontSize: "18px",
             fontWeight: "bold",
             cursor: "pointer",
-            boxShadow: "0 6px 20px rgba(135,95,137,0.35)",
+            boxShadow: "0 6px 20px rgba(135,95,137,0.25)",
           }}
         >
           Ver colección
