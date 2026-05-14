@@ -6,8 +6,7 @@ export default function Home() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background:
-          "linear-gradient(135deg, #faf7fb 0%, #f2ebf3 45%, #cdbfd1 100%)",
+        background: "#ffffff",
         fontFamily: "Arial",
         padding: "40px",
       }}
@@ -15,19 +14,21 @@ export default function Home() {
       <div
         style={{
           maxWidth: "520px",
+          width: "100%",
           textAlign: "center",
-          background: "#ffffff",
+          background: "#fcfafc",
           borderRadius: "30px",
           padding: "55px 35px",
-          boxShadow: "0 10px 40px rgba(0,0,0,0.08)",
+          boxShadow: "0 10px 40px rgba(0,0,0,0.06)",
+          border: "1px solid #f1ebf3",
         }}
       >
         <p
           style={{
             color: "#875F89",
             letterSpacing: "4px",
-            fontSize: "13px",
-            marginBottom: "15px",
+            fontSize: "12px",
+            marginBottom: "12px",
             fontWeight: "bold",
           }}
         >
@@ -36,10 +37,10 @@ export default function Home() {
 
         <p
           style={{
-            color: "#875F89",
+            color: "#9a8a9d",
             letterSpacing: "4px",
-            fontSize: "13px",
-            marginBottom: "15px",
+            fontSize: "12px",
+            marginBottom: "18px",
             fontWeight: "bold",
           }}
         >
@@ -61,8 +62,8 @@ export default function Home() {
 
         <p
           style={{
-            fontSize: "19px",
-            color: "#555",
+            fontSize: "18px",
+            color: "#666666",
             lineHeight: "1.8",
             marginBottom: "35px",
           }}
@@ -73,7 +74,7 @@ export default function Home() {
 
         <button
           style={{
-            background: "#8E7394",
+            background: "#875F89",
             color: "#ffffff",
             border: "none",
             padding: "16px 38px",
@@ -81,7 +82,7 @@ export default function Home() {
             fontSize: "16px",
             fontWeight: "bold",
             cursor: "pointer",
-            boxShadow: "0 6px 18px rgba(142,115,148,0.28)",
+            boxShadow: "0 6px 16px rgba(135,95,137,0.18)",
           }}
         >
           Ver colección
