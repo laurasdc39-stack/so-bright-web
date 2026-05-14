@@ -7,7 +7,7 @@ export default function Home() {
         justifyContent: "center",
         alignItems: "center",
         background:
-          "linear-gradient(135deg, #875F89 0%, #b89fba 45%, #ffffff 100%)",
+       "linear-gradient(135deg, #f8f5f8 0%, #e9dfe9 45%, #d6cad8 100%)", 
         fontFamily: "Arial",
         padding: "40px",
       }}
