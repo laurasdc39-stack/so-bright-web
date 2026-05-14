@@ -167,7 +167,7 @@ direccionFlex:"column",
           marginTop: "10px",
         }}
       >
-        Shampoo premium para brillo intenso y suavidad extrema.
+        Shampoo premium para brillo intenso y suavidad extrema
       </p>
     </div>
   </div>
