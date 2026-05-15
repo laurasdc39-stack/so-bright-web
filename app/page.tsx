@@ -1,77 +1,71 @@
-export default function Home() {
+xport default function Home() {
   return (
     <main
       style={{
         width: "100%",
-        background: "#F8F4F6",
+        background: "#FBF4F6",
         fontFamily: "Arial",
         color: "#111",
       }}
     >
-
       {/* NAVBAR */}
       <header
         style={{
           width: "100%",
-          padding: "24px 60px",
+          padding: "22px 5%",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          background: "#F8F4F6",
+          background: "#FBF4F6",
           position: "sticky",
           top: 0,
           zIndex: 100,
         }}
       >
-        <div>
-          <h1
-            style={{
-              fontSize: "38px",
-              margin: 0,
-              fontWeight: 800,
-              letterSpacing: "2px",
-            }}
-          >
-            SO BRIGHT
-          </h1>
-
-          <p
-            style={{
-              margin: 0,
-              letterSpacing: "4px",
-              fontSize: "12px",
-              color: "#875F89",
-            }}
-          >
-            PROFESSIONAL
-          </p>
-        </div>
+        <img
+          src="/logo.png"
+          alt="Logo"
+          style={{
+            width: "170px",
+            objectFit: "contain",
+          }}
+        />
 
         <nav
           style={{
             display: "flex",
-            gap: "32px",
+            gap: "20px",
             alignItems: "center",
+            fontSize: "13px",
             fontWeight: 600,
           }}
         >
-          <a href="#" style={{ color: "#111", textDecoration: "none" }}>
+          <a href="#inicio" style={{ textDecoration: "none", color: "#111" }}>
             Inicio
           </a>
 
-          <a href="#" style={{ color: "#111", textDecoration: "none" }}>
+          <a
+            href="#coleccion"
+            style={{ textDecoration: "none", color: "#111" }}
+          >
             Colección
           </a>
 
-          <a href="#" style={{ color: "#111", textDecoration: "none" }}>
+          <a
+            href="#beneficios"
+            style={{ textDecoration: "none", color: "#111" }}
+          >
             Beneficios
           </a>
 
-          <a href="#" style={{ color: "#111", textDecoration: "none" }}>
+          <a href="#guia" style={{ textDecoration: "none", color: "#111" }}>
             Guía
           </a>
 
-          <a href="#" style={{ color: "#111", textDecoration: "none" }}>
+          <a
+            href="#nosotros"
+            style={{ textDecoration: "none", color: "#111" }}
+          >
             Nosotros
           </a>
 
@@ -80,8 +74,9 @@ export default function Home() {
               background: "#875F89",
               color: "white",
               border: "none",
-              padding: "14px 28px",
+              padding: "10px 18px",
               borderRadius: "40px",
+              fontSize: "13px",
               fontWeight: 700,
               cursor: "pointer",
             }}
@@ -93,46 +88,47 @@ export default function Home() {
 
       {/* HERO */}
       <section
+        id="inicio"
         style={{
-          maxWidth: "1400px",
-          margin: "auto",
-          padding: "80px 60px",
+          width: "100%",
+          padding: "70px 5%",
           display: "grid",
           gridTemplateColumns: "1fr 1.2fr",
-          alignItems: "center",
           gap: "40px",
+          alignItems: "center",
         }}
       >
         <div>
           <p
             style={{
               color: "#875F89",
+              fontSize: "15px",
               fontWeight: 700,
               letterSpacing: "2px",
-              marginBottom: "18px",
             }}
           >
             CUIDADO PREMIUM PARA MASCOTAS
           </p>
 
-          <h2
+          <h1
             style={{
-              fontSize: "72px",
+              fontSize: "64px",
               lineHeight: 1,
-              marginBottom: "28px",
+              marginTop: "20px",
+              marginBottom: "24px",
             }}
           >
             Brillo profesional
             <br />
             en casa.
-          </h2>
+          </h1>
 
           <p
             style={{
-              fontSize: "22px",
-              lineHeight: 1.6,
+              fontSize: "18px",
+              lineHeight: 1.8,
               color: "#555",
-              marginBottom: "36px",
+              maxWidth: "520px",
             }}
           >
             Fórmulas profesionales diseñadas para aportar brillo,
@@ -141,13 +137,14 @@ export default function Home() {
 
           <button
             style={{
+              marginTop: "35px",
               background: "#875F89",
               color: "white",
               border: "none",
-              padding: "18px 40px",
+              padding: "16px 32px",
               borderRadius: "40px",
-              fontSize: "18px",
               fontWeight: 700,
+              fontSize: "16px",
               cursor: "pointer",
             }}
           >
@@ -155,32 +152,32 @@ export default function Home() {
           </button>
         </div>
 
-        <div>
-          <img
-            src="/hero-mockup.png"
-            alt="Hero"
-            style={{
-              width: "100%",
-              borderRadius: "30px",
-            }}
-          />
-        </div>
+        <img
+          src="/hero-mockup.png"
+          alt="Hero"
+          style={{
+            width: "100%",
+            borderRadius: "30px",
+            objectFit: "cover",
+          }}
+        />
       </section>
 
-      {/* PRODUCTOS */}
+      {/* COLECCIÓN */}
       <section
+        id="coleccion"
         style={{
-          maxWidth: "1400px",
-          margin: "auto",
-          padding: "40px 60px 100px",
+          width: "100%",
+          padding: "80px 5%",
+          textAlign: "center",
         }}
       >
         <p
           style={{
-            textAlign: "center",
             color: "#875F89",
             letterSpacing: "2px",
             fontWeight: 700,
+            marginBottom: "14px",
           }}
         >
           NUESTRA COLECCIÓN
@@ -188,54 +185,42 @@ export default function Home() {
 
         <h2
           style={{
-            textAlign: "center",
-            fontSize: "56px",
-            marginBottom: "70px",
+            fontSize: "52px",
+            marginBottom: "60px",
           }}
         >
-          Fórmulas profesionales
+          Fórmulas profesionales para
           <br />
-          para cada necesidad
+          cada necesidad
         </h2>
 
         <div
           style={{
             display: "grid",
             gridTemplateColumns: "repeat(5,1fr)",
-            gap: "26px",
+            gap: "24px",
           }}
         >
-
-          {/* CARD */}
           {[
             {
               img: "/silky-touch.png",
               title: "Silky Touch Shampoo",
-              desc: "Aporta brillo y suavidad intensa.",
             },
-
             {
               img: "/silky-acondicionador.png",
               title: "Silky Touch Acondicionador",
-              desc: "Desenreda, hidrata y deja el pelaje sedoso.",
             },
-
             {
               img: "/deep-clean.png",
               title: "Deep Clean Shampoo",
-              desc: "Limpieza profunda que elimina residuos.",
             },
-
             {
               img: "/red-booster.png",
               title: "Red Booster Shampoo",
-              desc: "Potencia tonos rojizos y cobrizos.",
             },
-
             {
               img: "/smooth-coat.png",
               title: "Smooth Coat Spray",
-              desc: "Desenreda al instante y controla frizz.",
             },
           ].map((item, index) => (
             <div
@@ -243,8 +228,7 @@ export default function Home() {
               style={{
                 background: "white",
                 borderRadius: "28px",
-                padding: "30px",
-                textAlign: "center",
+                padding: "28px",
               }}
             >
               <img
@@ -252,39 +236,19 @@ export default function Home() {
                 alt={item.title}
                 style={{
                   width: "100%",
-                  marginBottom: "20px",
+                  height: "260px",
+                  objectFit: "contain",
                 }}
               />
 
               <h3
                 style={{
-                  fontSize: "24px",
-                  marginBottom: "14px",
+                  marginTop: "20px",
+                  fontSize: "20px",
                 }}
               >
                 {item.title}
               </h3>
-
-              <p
-                style={{
-                  color: "#666",
-                  lineHeight: 1.5,
-                  minHeight: "60px",
-                }}
-              >
-                {item.desc}
-              </p>
-
-              <a
-                href="#"
-                style={{
-                  color: "#875F89",
-                  fontWeight: 700,
-                  textDecoration: "none",
-                }}
-              >
-                Ver más →
-              </a>
             </div>
           ))}
         </div>
@@ -292,14 +256,15 @@ export default function Home() {
 
       {/* BENEFICIOS */}
       <section
+        id="beneficios"
         style={{
-          background: "#F3EDF2",
-          padding: "100px 60px",
+          width: "100%",
+          padding: "90px 5%",
+          textAlign: "center",
         }}
       >
         <p
           style={{
-            textAlign: "center",
             color: "#875F89",
             letterSpacing: "2px",
             fontWeight: 700,
@@ -310,8 +275,8 @@ export default function Home() {
 
         <h2
           style={{
-            textAlign: "center",
             fontSize: "56px",
+            marginTop: "16px",
             marginBottom: "60px",
           }}
         >
@@ -320,11 +285,9 @@ export default function Home() {
 
         <div
           style={{
-            maxWidth: "1400px",
-            margin: "auto",
             display: "grid",
             gridTemplateColumns: "repeat(5,1fr)",
-            gap: "24px",
+            gap: "20px",
           }}
         >
           {[
@@ -338,35 +301,25 @@ export default function Home() {
               key={index}
               style={{
                 background: "white",
-                padding: "34px",
                 borderRadius: "24px",
-                textAlign: "center",
+                padding: "34px 20px",
               }}
             >
               <h3>{item}</h3>
-
-              <p
-                style={{
-                  color: "#666",
-                  lineHeight: 1.5,
-                }}
-              >
-                Calidad premium para grooming profesional en casa.
-              </p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* EXPERIENCIA */}
+      {/* SPA */}
       <section
+        id="nosotros"
         style={{
-          maxWidth: "1400px",
-          margin: "auto",
-          padding: "100px 60px",
+          width: "100%",
+          padding: "80px 5%",
           display: "grid",
           gridTemplateColumns: "1fr 1fr",
-          gap: "40px",
+          gap: "50px",
           alignItems: "center",
         }}
       >
@@ -376,6 +329,7 @@ export default function Home() {
           style={{
             width: "100%",
             borderRadius: "30px",
+            objectFit: "cover",
           }}
         />
 
@@ -383,8 +337,8 @@ export default function Home() {
           <p
             style={{
               color: "#875F89",
-              letterSpacing: "2px",
               fontWeight: 700,
+              letterSpacing: "2px",
             }}
           >
             EXPERIENCIA SO BRIGHT
@@ -392,9 +346,10 @@ export default function Home() {
 
           <h2
             style={{
-              fontSize: "58px",
+              fontSize: "54px",
               lineHeight: 1.1,
-              marginBottom: "30px",
+              marginTop: "20px",
+              marginBottom: "24px",
             }}
           >
             Más que un baño,
@@ -406,10 +361,9 @@ export default function Home() {
 
           <p
             style={{
-              color: "#666",
-              lineHeight: 1.7,
-              fontSize: "20px",
-              marginBottom: "34px",
+              color: "#555",
+              fontSize: "18px",
+              lineHeight: 1.8,
             }}
           >
             Cada fórmula está diseñada para transformar el momento
@@ -418,12 +372,12 @@ export default function Home() {
 
           <button
             style={{
+              marginTop: "30px",
               background: "#875F89",
               color: "white",
               border: "none",
-              padding: "18px 40px",
+              padding: "16px 30px",
               borderRadius: "40px",
-              fontSize: "18px",
               fontWeight: 700,
               cursor: "pointer",
             }}
@@ -436,28 +390,26 @@ export default function Home() {
       {/* FOOTER */}
       <footer
         style={{
+          width: "100%",
           background: "#875F89",
           color: "white",
-          padding: "70px 60px",
+          padding: "70px 5%",
           marginTop: "60px",
         }}
       >
         <div
           style={{
-            maxWidth: "1400px",
-            margin: "auto",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
             flexWrap: "wrap",
-            gap: "30px",
+            gap: "20px",
           }}
         >
           <div>
             <h2
               style={{
-                fontSize: "34px",
-                marginBottom: "12px",
+                fontSize: "42px",
               }}
             >
               ¿Lista para transformar su pelaje?
@@ -465,6 +417,7 @@ export default function Home() {
 
             <p
               style={{
+                marginTop: "10px",
                 opacity: 0.9,
               }}
             >
@@ -477,9 +430,8 @@ export default function Home() {
               background: "white",
               color: "#875F89",
               border: "none",
-              padding: "18px 40px",
+              padding: "16px 30px",
               borderRadius: "40px",
-              fontSize: "18px",
               fontWeight: 700,
               cursor: "pointer",
             }}
@@ -487,39 +439,7 @@ export default function Home() {
             Ver colección
           </button>
         </div>
-
-        <div
-          style={{
-            maxWidth: "1400px",
-            margin: "60px auto 0",
-            borderTop: "1px solid rgba(255,255,255,0.2)",
-            paddingTop: "30px",
-            display: "flex",
-            justifyContent: "space-between",
-            flexWrap: "wrap",
-            gap: "20px",
-          }}
-        >
-          <div>
-            <h3>SO BRIGHT PROFESSIONAL</h3>
-            <p>Cuidado premium para mascotas.</p>
-          </div>
-
-          <div>
-            <p>@so_bright.professional</p>
-            <p>Hecho en México</p>
-          </div>
-
-          <div>
-            <p>+52 1234 5678</p>
-            <p>hola@sobright.com</p>
-          </div>
-        </div>
       </footer>
     </main>
   );
 }
-
-
-
-
