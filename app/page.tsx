@@ -1,153 +1,191 @@
 export default function Home() {
   return (
-    <main className="w-full min-h-screen bg-white text-black">
-      
-      {/* HEADER */}
-      <header className="w-full flex justify-center pt-8">
-        <img
-          src="/logo.png"
-          alt="So Bright Logo"
-          className="w-40 object-contain"
-        />
+    <main style={{ fontFamily: "Arial, sans-serif", margin: 0, color: "#111", background: "#fff" }}>
+      <header style={header}>
+        <img src="/logo.png" alt="SO BRIGHT" style={{ width: 160 }} />
+
+        <nav style={nav}>
+          <a href="#inicio" style={link}>Inicio</a>
+          <a href="#coleccion" style={link}>Colección</a>
+          <a href="#beneficios" style={link}>Beneficios</a>
+          <a href="#guia" style={link}>Guía</a>
+          <a href="#nosotros" style={link}>Nosotros</a>
+          <a href="https://wa.me/525512345678" style={button}>Contactar</a>
+        </nav>
       </header>
 
-      {/* HERO */}
-      <section className="w-full flex flex-col items-center justify-center px-6 pt-10 pb-20">
-        
-        <h1 className="text-5xl md:text-6xl font-bold tracking-wide text-center">
-          SO BRIGHT
-        </h1>
-
-        <p className="mt-6 text-center text-gray-700 text-lg max-w-2xl leading-relaxed">
-          Cuidado premium para mascotas. Fórmulas profesionales para brillo,
-          suavidad y bienestar del pelaje.
-        </p>
-
+      <section id="inicio">
         <img
-          src="/hero.jpg"
-          alt="Hero"
-          className="mt-10 w-full max-w-4xl rounded-3xl shadow-2xl object-cover"
+          src="/maqueta-de-heroe.png"
+          alt="SO BRIGHT Professional"
+          style={{ width: "100%", display: "block" }}
         />
+      </section>
 
-        <div className="mt-10 flex gap-4 flex-wrap justify-center">
-          <button className="bg-black text-white px-8 py-4 rounded-full text-lg hover:scale-105 transition-all">
-            Comprar ahora
-          </button>
+      <section id="coleccion" style={section}>
+        <p style={smallTitle}>NUESTRA COLECCIÓN</p>
+        <h2 style={title}>Fórmulas profesionales para<br />cada necesidad</h2>
 
-          <button className="border border-black px-8 py-4 rounded-full text-lg hover:bg-black hover:text-white transition-all">
-            Ver productos
-          </button>
+        <div style={productsGrid}>
+          <Product img="/sedoso-acondicionador.png" title="SILKY TOUCH ACONDICIONADOR" />
+          <Product img="/tacto sedoso.png" title="SILKY TOUCH DOG SHAMPOO" />
+          <Product img="/limpieza profunda.png" title="DEEP CLEAN DOG SHAMPOO" />
+          <Product img="/potenciador rojo.png" title="RED BOOSTER DOG SHAMPOO" />
+          <Product img="/capa lisa.png" title="SMOOTH COAT SPRAY DESENREDANTE" />
         </div>
       </section>
 
-      {/* PRODUCTOS */}
-      <section className="w-full px-6 py-20 bg-gray-50">
-        <h2 className="text-4xl font-bold text-center mb-16">
-          Nuestra línea premium
-        </h2>
+      <section id="beneficios" style={{ ...section, background: "#fbf4fb" }}>
+        <p style={smallTitle}>BENEFICIOS</p>
+        <h2 style={title}>Cuidado que se nota</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-
-          {/* PRODUCTO 1 */}
-          <div className="bg-white rounded-3xl shadow-lg p-6 flex flex-col items-center">
-            <img
-              src="/silky.jpg"
-              alt="Silky Touch"
-              className="w-full h-80 object-cover rounded-2xl"
-            />
-
-            <h3 className="text-2xl font-semibold mt-6">
-              Silky Touch
-            </h3>
-
-            <p className="text-gray-600 text-center mt-3">
-              Suavidad extrema y brillo sedoso para pelajes delicados.
-            </p>
-          </div>
-
-          {/* PRODUCTO 2 */}
-          <div className="bg-white rounded-3xl shadow-lg p-6 flex flex-col items-center">
-            <img
-              src="/deepclean.jpg"
-              alt="Deep Clean"
-              className="w-full h-80 object-cover rounded-2xl"
-            />
-
-            <h3 className="text-2xl font-semibold mt-6">
-              Deep Clean
-            </h3>
-
-            <p className="text-gray-600 text-center mt-3">
-              Limpieza profunda con aroma premium y control de olor.
-            </p>
-          </div>
-
-          {/* PRODUCTO 3 */}
-          <div className="bg-white rounded-3xl shadow-lg p-6 flex flex-col items-center">
-            <img
-              src="/smooth.jpg"
-              alt="Smooth Coat"
-              className="w-full h-80 object-cover rounded-2xl"
-            />
-
-            <h3 className="text-2xl font-semibold mt-6">
-              Smooth Coat
-            </h3>
-
-            <p className="text-gray-600 text-center mt-3">
-              Desenredante profesional con acabado brillante y suave.
-            </p>
-          </div>
-
+        <div style={benefitGrid}>
+          <Benefit title="Sin sulfatos agresivos" text="Fórmulas suaves que cuidan la piel y el pelaje." />
+          <Benefit title="Sin parabenos" text="Ingredientes pensados para uso frecuente." />
+          <Benefit title="Fórmulas profesionales" text="Resultados tipo grooming boutique." />
+          <Benefit title="Para todas las razas" text="Ideal para perros de todos los tamaños." />
+          <Benefit title="Brillo y suavidad" text="Pelaje limpio, suave y con apariencia saludable." />
         </div>
       </section>
 
-      {/* BENEFICIOS */}
-      <section className="w-full px-6 py-20">
-        <h2 className="text-4xl font-bold text-center mb-16">
-          ¿Por qué elegir SO BRIGHT?
-        </h2>
+      <section id="guia" style={section}>
+        <p style={smallTitle}>¿CUÁL ELEGIR?</p>
+        <h2 style={title}>Encuentra el ideal para tu peludo</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto text-center">
-
-          <div className="p-8 rounded-3xl border">
-            <h3 className="text-2xl font-bold mb-4">
-              Ingredientes premium
-            </h3>
-
-            <p className="text-gray-600">
-              Fórmulas desarrolladas para grooming profesional.
-            </p>
-          </div>
-
-          <div className="p-8 rounded-3xl border">
-            <h3 className="text-2xl font-bold mb-4">
-              Brillo profesional
-            </h3>
-
-            <p className="text-gray-600">
-              Pelaje suave, brillante y con acabado elegante.
-            </p>
-          </div>
-
-          <div className="p-8 rounded-3xl border">
-            <h3 className="text-2xl font-bold mb-4">
-              Aroma duradero
-            </h3>
-
-            <p className="text-gray-600">
-              Fragancias premium con sensación de grooming boutique.
-            </p>
-          </div>
-
+        <div style={guideGrid}>
+          <Guide title="Pelo seco y sin brillo" text="Silky Touch Shampoo + Acondicionador" />
+          <Guide title="Malos olores o suciedad" text="Deep Clean Shampoo" />
+          <Guide title="Tonos rojizos o cobrizos" text="Red Booster Shampoo" />
+          <Guide title="Nudos y enredos" text="Smooth Coat Spray" />
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer className="w-full py-10 border-t text-center text-gray-500">
-        © 2026 SO BRIGHT — Premium Pet Care
+      <section style={{ ...section, background: "#fbf4fb" }}>
+        <h2 style={title}>¿Lista para transformar su pelaje?</h2>
+        <p style={{ fontSize: 18, marginBottom: 25 }}>Descubre toda nuestra colección profesional.</p>
+        <a href="https://wa.me/525512345678" style={button}>Pedir por WhatsApp</a>
+      </section>
+
+      <footer id="nosotros" style={footer}>
+        <div>
+          <h2 style={{ margin: 0 }}>SO BRIGHT PROFESSIONAL</h2>
+          <p>Cuidado premium para mascotas.</p>
+        </div>
+
+        <div style={{ textAlign: "right" }}>
+          <p>WhatsApp: 55 1234 5678</p>
+          <p>hola@sobright.com</p>
+        </div>
       </footer>
-
     </main>
+  );
+}
+
+const header = {
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  padding: "25px 60px",
+};
+
+const nav = {
+  display: "flex",
+  gap: 30,
+  alignItems: "center",
+};
+
+const link = {
+  color: "#111",
+  textDecoration: "none",
+  fontWeight: 600,
+};
+
+const button = {
+  display: "inline-block",
+  background: "#875F89",
+  color: "white",
+  padding: "14px 30px",
+  borderRadius: 30,
+  textDecoration: "none",
+  fontWeight: 700,
+};
+
+const section = {
+  padding: "70px 50px",
+  textAlign: "center" as const,
+};
+
+const smallTitle = {
+  color: "#875F89",
+  fontWeight: 800,
+  letterSpacing: 1,
+};
+
+const title = {
+  fontSize: 42,
+  fontFamily: "serif",
+  marginBottom: 40,
+};
+
+const productsGrid = {
+  display: "grid",
+  gridTemplateColumns: "repeat(5, 1fr)",
+  gap: 25,
+  maxWidth: 1200,
+  margin: "0 auto",
+};
+
+const benefitGrid = {
+  display: "grid",
+  gridTemplateColumns: "repeat(5, 1fr)",
+  gap: 22,
+  maxWidth: 1150,
+  margin: "0 auto",
+};
+
+const guideGrid = {
+  display: "grid",
+  gridTemplateColumns: "repeat(4, 1fr)",
+  gap: 25,
+  maxWidth: 1100,
+  margin: "0 auto",
+};
+
+const footer = {
+  background: "#875F89",
+  color: "white",
+  padding: "45px 60px",
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+};
+
+function Product({ img, title }: any) {
+  return (
+    <div style={{ background: "white", borderRadius: 22, padding: 25, boxShadow: "0 8px 25px rgba(0,0,0,.08)" }}>
+      <img src={img} alt={title} style={{ width: "100%", height: 230, objectFit: "contain" }} />
+      <h3 style={{ fontSize: 15 }}>{title}</h3>
+      <a href="https://wa.me/525512345678" style={{ color: "#875F89", fontWeight: 700, textDecoration: "none" }}>
+        Pedir información →
+      </a>
+    </div>
+  );
+}
+
+function Benefit({ title, text }: any) {
+  return (
+    <div style={{ background: "white", padding: 25, borderRadius: 20 }}>
+      <h3>{title}</h3>
+      <p style={{ color: "#555" }}>{text}</p>
+    </div>
+  );
+}
+
+function Guide({ title, text }: any) {
+  return (
+    <div style={{ background: "#fbf4fb", padding: 25, borderRadius: 20 }}>
+      <h3>{title}</h3>
+      <p style={{ color: "#875F89", fontWeight: 700 }}>{text}</p>
+    </div>
   );
 }
