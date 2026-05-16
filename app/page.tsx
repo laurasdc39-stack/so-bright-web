@@ -5,7 +5,7 @@ export default function Home() {
       {/* HERO */}
       <section style={{ width: "100%" }}>
         <img
-          src="/maqueta-de-heroe.png"
+          src="/público/maqueta-de-heroe.png"
           alt="SO BRIGHT"
           style={{
             width: "100%",
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* COLECCION */}
+      {/* COLECCIÓN */}
       <section
         id="coleccion"
         style={{
@@ -95,27 +95,27 @@ export default function Home() {
 
         <div style={grid}>
           <Producto
-            img="/sedoso-acondicionador.png"
+            img="/público/sedoso-acondicionador.png"
             nombre="SILKY TOUCH ACONDICIONADOR"
           />
 
           <Producto
-            img="/tacto sedoso.png"
+            img="/público/tacto sedoso.png"
             nombre="SILKY TOUCH DOG SHAMPOO"
           />
 
           <Producto
-            img="/limpieza profunda.png"
+            img="/público/limpieza profunda.png"
             nombre="DEEP CLEAN DOG SHAMPOO"
           />
 
           <Producto
-            img="/potenciador rojo.png"
+            img="/público/potenciador rojo.png"
             nombre="RED BOOSTER DOG SHAMPOO"
           />
 
           <Producto
-            img="/capa lisa.png"
+            img="/público/capa lisa.png"
             nombre="SMOOTH COAT SPRAY DESENREDANTE"
           />
         </div>
